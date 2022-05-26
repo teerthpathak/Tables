@@ -5,7 +5,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+       * {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #222222;
+    width: 100%;
+    /* height: 5vw; */
+}
+
+.h1 {
+    font-size: 1.5vw;
+    color: white;
+    padding: 1vw;
+    display: inline-block;
+}
+
+.header-container {
+    justify-content: end;
+    display: inline-flexbox;
+    float: right;
+    padding: 1vw;
+}
+
+.text {
+    display: inline-block;
+    width: 20vw;
+}
+
+.go {
+    background-color: #555555;
+    color: white;
+    border: 1px solid #555555;
+    font-size: 1.3vw;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 2vw;
+    width: 4vw;
+    display: inline-block;
+}
+
+.clear {
+    background-color: #555555;
+    color: white;
+    border: 1px solid #555555;
+    font-size: 1.3vw;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 2vw;
+    width: 4vw;
+    display: inline-block;
+}
+
+.container {
+    width: 100%;
+    justify-content: center;
+    display: grid;
+}
+
+.span {
+    font-size: 2.5vw;
+    font-weight: bolder;
+}
+
+footer {
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    display: grid;
+}
+
+
+footer hr {
+    width: 95vw;
+    color: grey;
+}
+
+footer p {
+    margin: 2%;
+    color: black;
+    font-size: 2vw;
+    font-weight: bold;
+}
+    </style>
     <title>Tables Generator</title>
 </head>
 
@@ -102,7 +187,32 @@
         <hr>
         <p>Developed By : Teerth Pathak</p>
     </footer>
-    <script src="js/main.js"></script>
+    <script>
+       function go() {
+    var get_num = document.getElementById("text").value;
+    document.getElementById("1.1").innerText = get_num;
+    document.getElementById("2.1").innerText = get_num;
+    document.getElementById("3.1").innerText = get_num;
+    document.getElementById("4.1").innerText = get_num;
+    document.getElementById("5.1").innerText = get_num;
+    document.getElementById("6.1").innerText = get_num;
+    document.getElementById("7.1").innerText = get_num;
+    document.getElementById("8.1").innerText = get_num;
+    document.getElementById("9.1").innerText = get_num;
+    document.getElementById("10.1").innerText = get_num;
+    /////////////////////////////////////////////////////////////////////////////////
+    document.getElementById("1.2").innerText = get_num * 1;
+    document.getElementById("2.2").innerText = get_num * 2;
+    document.getElementById("3.2").innerText = get_num * 3;
+    document.getElementById("4.2").innerText = get_num * 4;
+    document.getElementById("5.2").innerText = get_num * 5;
+    document.getElementById("6.2").innerText = get_num * 6;
+    document.getElementById("7.2").innerText = get_num * 7;
+    document.getElementById("8.2").innerText = get_num * 8;
+    document.getElementById("9.2").innerText = get_num * 9;
+    document.getElementById("10.2").innerText = get_num * 10;
+}
+    </script>
 </body>
 
 </html>
